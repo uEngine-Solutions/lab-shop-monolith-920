@@ -21,7 +21,6 @@
             <Number label="Qty" v-model="value.qty" :editMode="editMode"/>
             <String label="CustomerId" v-model="value.customerId" :editMode="editMode"/>
             <Number label="Amount" v-model="value.amount" :editMode="editMode"/>
-            <InventoryId offline label="InventoryId" v-model="value.inventoryId" :editMode="editMode" @change="change"/>
         </v-card-text>
 
         <v-card-actions>
@@ -100,6 +99,9 @@
             },
         }),
         computed:{
+            userRoles() {
+                return localStorage.getItem('user_client_roles');
+            } 
         },
         methods: {
             selectFile(){
