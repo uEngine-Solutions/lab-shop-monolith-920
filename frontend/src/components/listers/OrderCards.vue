@@ -72,7 +72,6 @@
                 'qty': 0,
                 'customerId': '',
                 'amount': 0,
-                'inventoryId': {},
             }
         },
         methods:{

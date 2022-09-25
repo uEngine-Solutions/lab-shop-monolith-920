@@ -46,12 +46,6 @@ public class Order  {
     
     
     private Double amount;
-    
-    
-    
-    @Embedded
-    
-    private InventoryId inventoryId;
 
     @PostPersist
     public void onPostPersist(){

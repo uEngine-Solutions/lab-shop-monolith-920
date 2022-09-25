@@ -17,7 +17,6 @@
             <div>
                 <Number label="Amount" v-model="item.amount" :editMode="editMode" @change="change" />
             </div>
-            <InventoryId offline label="InventoryId" v-model="item.inventoryId" :editMode="false" :key="false" @change="change" />
         </v-card-text>
 
         <v-card-actions>
